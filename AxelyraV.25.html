@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.google.com/specimen/Exo+2" rel="stylesheet">
+
+  <!-- AOS Animate On Scroll -->
+  <link href="https://forms.gle/6QR6ZRngUxdVgTNR6s" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">AXELYRA V.25</div>
+      <div class="toggle" onclick="toggleMenu()">☰</div>
+      <nav id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#technical">Technical</a>
+        <a href="#non-technical">Non-Technical</a>
+        <a href="#pillars">Pillars</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="section">
+<div class="hero-content">
+    <div class="hero-text-box">
+  <h1>
+    Wits Proudly Presents<br>
+    <span>Axelyra V.25<br>National level technical Symposium</span><br> Department of Artificial Intelligence and<br> Data Science<br>
+    <span class="college-name">Arunachala College Of Engineering for Women</span>
+    <span class ="event-date">August 29,2025</span>
+  </h1>
+<div class="btn-wrapper">
+  <a href="https://forms.gle/6QR6ZRngUxdVgTNR6" class="btn-glow" target="_blank" rel="noopener noreferrer">Register Here</a>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Technical Events -->
+<section id="technical" class="section">
+  <h2>Technical Events</h2> 
+   <div class="event-container">
+    <div class="event">
+    <button class="collapsible">Paper X</button>
+    <div class="content">
+      <ul>
+        <li>Individual or Team(upto 3 members)</li>
+        <li>Paper must be original and related domains are AI&ML,Cybersecurity & blockchain,Green Computing & Sustainability,Human-Computer Interaction,Robotics & Automation,Recent trends in Technology.</li>
+        <li>Presentation time: 4 minutes + 2 minutes Q&A.</li>
+        <li>Bring a printed copy of the paper on the event day and carry a PPT in a pen drive as a backup</li>
+        <li>Plagiarism leads to disqualification.</li>
+      </ul>
+    </div>
+  </div>  
+  
+  <div class="event">
+    <button class="collapsible">Prompt Craft</button>
+    <div class="content">
+      <ul>
+        <li>Individual participation only.</li>
+        <li>Topic will be given on-spot.</li>
+        <li>Time limit: 30 minutes.</li>
+        <li>Submit AI prompt with generated output.</li>
+        <li>Tools like ChatGPT or Gemini,Bing,Any free web-based AI image generator allowed.</li>
+      </ul>
+    </div>
+  </div>
+   <div class="event">
+    <button class="collapsible">Error 404</button>
+    <div class="content">
+      <ul>
+        <li>Individual participation only.</li>
+        <li>Total questions:3 (1easy,1 medium,1 hard)</li>
+        <li>Fix bugs from given code snippets.</li>
+        <li>Internet usage is not allowed.Mode: Offline</li>
+        <li>Duration:45 minutes.</li>
+        <li>Language:Python</li>
+        <li>Scoring based on speed and accuracy.</li>
+      </ul>
+    </div>
+  </div>  <div class="event">
+    <button class="collapsible">AIQ</button>
+    <div class="content">
+      <ul>
+        <li>Individual participation only</li>
+        <li>Mode:Offline(OMR based)</li>
+        <li>No mobile phones allowed.</li>
+        <li>Data Structures & Algorithms,Databases & SQL,Operating Systems,Computer Networks,Artificial Intelligence Basics,Web Technologies,AI trends and technology</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--Non- Technical Events -->  
+<section id="non-technical" class="section"> 
+  <h2>Non-Technical Events</h2>  
+  <div class="event-container">
+  <div class="event">
+    <button class="collapsible">Try Not to Laugh</button>
+    <div class="content">
+      <ul>
+        <li>Individual participation only.</li>
+        <li>Duration:20 minutes.</li>
+        <li>Participants should try to make each other laugh.</li>
+        <li>participants will watch a series of hilarious video clips, memes, and live comic acts —
+and the goal is simple: don’t laugh, smile, or even smirk..</li>
+        <li>Last one standing wins!.</li>
+      </ul>
+    </div>
+  </div>  <div class="event">
+    <button class="collapsible">Guess in Mute</button>
+    <div class="content">
+      <ul>
+        <li>Team of 2 members.</li>
+        <li>One will enact(Speaker), the other will guess(Guesser).</li>
+        <li>Every correct guess gets 1 point.
+If they can't guess, they can skip and move to the next word.</li>
+        <li>No lip movement allowed.Use of signs and body language only.</li>
+        <li>Switch Roles:
+After one round, players can switch roles ;Guesser becomes Speak for the next round.
+Winning:
+The team with the most correct guesses in the given time gets the chance to participate in the 
+final level</li>
+      </ul>
+    </div>
+  </div>  <div class="event">
+    <button class="collapsible">AdMad</button>
+    <div class="content">
+      <ul>
+        <li>2 members can participate.</li>
+        <li>Audio-based guessing game — no visuals;Listen to audio clips from real ads (TV/online);Clip types may include:Only jingles (music);Famous voices/dialogues;Background ad sounds (brand names removed)</li>
+        <li>Each clip is 10–30 seconds long;Participants must raise their hand and answer within 15 seconds.</li>
+        <li>Correct brand/product = 10 points</li>
+        <li>Multiple rounds with increasing difficulty (Easy → Medium → Hard);Tie-breaker round if needed
+<br>Optional Rapid-Fire Final Round (shorter, quicker clips)<br>Team or individual with the highest total score wins or qualifies for finals
+</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+      const content = btn.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  });
+</script>
+<!-- Pillars of Guidance Section -->
+<section class="pillars-section" id="pillars">
+  <h2 class="section-title">Pillars of Guidance</h2>
+
+  <!-- Top Row: Chairman, MD, Principal -->
+  <div class="pillars-container">
+    <div class="pillar-card">
+      <img src="images/chairman.jpg" alt="Chairman">
+      <h3>Dr. T. Krishnaswamy</h3>
+      <p>Chairman</p>
+    </div>
+    <div class="pillar-card">
+      <img src="images/MD.jpg" alt="Managing Director">
+      <h3>Er. K. Dharun Surath</h3>
+      <p>Managing Director</p>
+    </div>
+    <div class="pillar-card">
+      <img src="images/Principal.jpg" alt="Principal">
+      <h3>Dr. S. Joseph Jawhar</h3>
+      <p>Principal</p>
+    </div>
+  </div>
+  </section>
+
+  <!-- Bottom Row: HoD and Staff Coordinator -->
+  <div class="pillars-container bottom-row">
+    <div class="pillar-card">
+      <img src="images/Hod.jpg" alt="HoD / AI&DS">
+      <h3>Dr. T. Sunitha</h3>
+      <p>HoD / AI&DS</p>
+    </div>
+    <div class="pillar-card">
+      <img src="images/sp.jpg" alt="Staff Coordinator">
+      <h3>Asst. Prof. N. Siva Priya</h3>
+      <p>Staff Coordinator</p>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Axelyra</h2>
+    <p>Axelyra is more than just a symposium-it's a vibrant celebration of innovation, intelligence, and inspiration. Designed to ignite young minds, this event opens the door to a world of AI, Data Science, creativity, and competitive excellence through both technical and non-technical events.
+         Don't just participate !! Compete and win exciting prizes</p>
+    <p><br>Email: axelyra.v25@gmail.com<br>Staff Co-ordinator:<br>Mrs.N.Siva Priya(Assistant Professor) , Contact:73394 53115</p><br>Student Co-ordinator:<br>R.S.Indujaa(Final year) ,Contact: 9360169409<br>S.Karishma Ram(Final year),Contact: 9344423557
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Axelyra V.25 | Arunachala College of Engineering for Women</p>
+  </footer>
+
+  <!-- Toggle Navbar JS -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+  <!-- AOS Animate -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
