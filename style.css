@@ -280,6 +280,128 @@ nav a {
   margin-bottom: 40px;
   text-shadow: 0 0 10px #ffb3d1;
 }
+/* Event Spotlight Section */
+#event-spotlight {
+  background: linear-gradient(to right, #2c001a, #2b001f);
+  padding: 4rem 2rem;
+  color: #ffd9e8;
+  text-align: center;
+}
+
+#event-spotlight h2 {
+  font-size: 2.5rem;
+  color: #ff70e3;
+  text-shadow: 0 0 15px #ff70e3;
+  margin-bottom: 3rem;
+}
+
+/* Container to center and limit width */
+.spotlight-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Event Spotlight Section */
+#event-spotlight {
+  background: linear-gradient(135deg, #2c001a, #2b001f); /* deep wine red gradient */
+  padding: 4rem 2rem;
+  color: #f5d0e9; /* soft pinkish for text */
+  text-align: center;
+}
+
+#event-spotlight h2 {
+  font-size: 2.5rem;
+  color: #ff8fcf; /* lighter pink for heading */
+  text-shadow: 0 0 15px #ff8fcf;
+  margin-bottom: 3rem;
+}
+
+/* Container to center and limit width */
+.spotlight-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Event Spotlight Section */
+#event-spotlight {
+  background: linear-gradient(135deg, #2c001a, #2b001f); /* wine red gradient */
+  padding: 4rem 2rem;
+  color: #ffd9e8; /* soft pale pink text for contrast */
+  text-align: center;
+}
+
+#event-spotlight h2 {
+  font-size: 2.5rem;
+  color: #ff8fcf; /* your existing pink highlight */
+  text-shadow: 0 0 15px #ff8fcf;
+  margin-bottom: 3rem;
+}
+
+/* Container to center and limit width */
+.spotlight-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 3D Immersion Room card */
+.spotlight-card {
+  background: rgba(255, 255, 255, 0.05); /* subtle translucent white */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow:
+    0 10px 20px rgba(255, 143, 207, 0.15), /* gentle pink glow */
+    inset 0 0 40px #b30055; /* darker wine red inner glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.spotlight-card:hover {
+  transform: perspective(800px) rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow:
+    0 15px 30px rgba(179, 0, 85, 0.5), /* stronger dark wine glow on hover */
+    inset 0 0 60px #d70073;
+}
+
+.spotlight-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px #ff8fcf;
+}
+
+.spotlight-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff8fcf;
+  text-shadow: 0 0 8px #ff8fcf;
+}
+
+.spotlight-card p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ffd9e8;
+}
+
+.spotlight-card .btn-glow {
+  background: #ff8fcf;
+  color: #2b001f; /* exact wine red for text */
+  padding: 0.8rem 2.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 12px #ff8fcf;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-card .btn-glow:hover {
+  background: #d0529a;
+  box-shadow: 0 0 25px #d0529a;
+  transform: scale(1.1);
+}
+
+
 
 .pillars-container {
   display: flex;
@@ -350,4 +472,4 @@ footer {
   padding: 1rem;
   color: #76eefa;
   font-size: 0.9rem;
-}
+}  
