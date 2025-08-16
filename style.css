@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* Navbar */
 .navbar {
   display:flex;
@@ -187,6 +188,28 @@ nav a {
 
 
 /* Events */
+/* For event cards */
+.spotlight-card ul,
+.section ul {
+  list-style-position: inside; /* keeps bullets aligned */
+  padding-left: 20px;         /* even spacing for bullets */
+  margin: 0 auto;             /* center align inside card */
+  text-align: left;           /* keeps bullets tidy */
+  max-width: 90%;             /* prevents overflow */
+}
+
+.spotlight-card li,
+.section li {
+  margin-bottom: 8px;         /* spacing between points */
+  line-height: 1.6;           /* better readability */
+}
+.spotlight-card ul,
+.section ul {
+  list-style-position: outside; 
+  padding-left: 25px;   /* adds proper indentation */
+  margin: 0;
+}
+
 .event-container {
   display:flex;
   flex-wrap:wrap;
@@ -334,6 +357,54 @@ nav a {
 #about p {
   margin-bottom: 20px;
 }
+/* Normal brochure */
+.brochure-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.brochure-img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.brochure-img:hover {
+  transform: scale(1.03);
+}
+
+/* Modal popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
 
 
 /* Footer */
